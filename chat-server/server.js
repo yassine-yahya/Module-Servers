@@ -1,3 +1,4 @@
+process.env.PORT = process.env.PORT || 9090;
 const express = require("express");
 const cors = require("cors");
 
@@ -20,4 +21,6 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + "/index.html");
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT,() => {
+  console.log(`listening on PORT ${process.env.PORT}...`);
+});
