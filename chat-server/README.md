@@ -79,6 +79,11 @@ What to do now:
 - [ ] Instead, attach the URLs as links when you "mark done" your assignment in Google Classroom.
 - [ ] You might want to download your project for safekeeping. (Tools: Git, Import, and Export: Download Project)
 
+## 🏝️ Stretch challenges
+
+The remaining challenges below are stretch challenges - you can have go at these once you've completed the Level 1 challenge.
+
+
 ## Level 2 - simple validation
 
 For this level, your server must:
