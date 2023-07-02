@@ -8,14 +8,6 @@ A simple front-end has been provided to allow you to test _some_ of the function
 
 In the optional 'React' part of this challenge, you also make a React app which allows you to read, add and delete messages, backed by your new server.
 
-## Solution
-
-You can find the solution to this challenge here:
-
-https://github.com/CodeYourFuture/node-challenge-chat-server-solution
-
-Please ask your mentors for access to this repository.
-
 ## Pre-reqs
 
 - [ ] You should have completed at least Level 1 of the Quote Server challenge before attempting this challenge.
@@ -193,3 +185,9 @@ and in CORS in Express [here](https://expressjs.com/en/resources/middleware/cors
 | GET    | `/messages/17` | get one message by id  |
 | POST   | `/messages`    | create a new message   |
 | DELETE | `/messages/17` | delete a message by id |
+
+
+## Solution
+
+You can find the solution to this challenge on the `solutions` branch of this repo.
+
