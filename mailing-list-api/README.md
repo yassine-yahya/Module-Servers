@@ -29,6 +29,8 @@ The data consists of mailing lists which have a name and an array of member emai
 }
 ```
 
+You can find some sample data in the `mailing-lists.js` file.
+
 ## Routes
 
 ### Index
