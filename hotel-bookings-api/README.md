@@ -95,6 +95,12 @@ For this level, your server must reject requests to create bookings if:
 
 In this case your server should return a status code of 400, and should NOT store the booking in the bookings array.
 
+## 🏝️ Stretch challenges
+
+
+Below are some stretch challenges, have a go at these once you've completed the previous challenges.
+
+
 # Level 3 (Optional, advanced) - search by date
 
 For this level your API must also allow a client to:
