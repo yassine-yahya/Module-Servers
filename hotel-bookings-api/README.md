@@ -4,9 +4,9 @@
 
 In this challenge you must make an Express app which provides an API to manage a list of hotel bookings, in JSON format.
 
-In the advanced part of this exercise you will modify your React hotel app which you built during the React module, to read, create, and delete room bookings.
+For extra interest, a miniature EJS front-end has been provided to help you to think through some of the functionality.
 
-We also provide a basic React front-end to allow you to test some of the functionality.
+In the advanced part of this exercise you will modify your React hotel app which you built during the React module, to read, create, and delete room bookings.
 
 ### Requirements
 
@@ -31,11 +31,11 @@ See the later spoiler section "Correct Routes" if you are not sure of the correc
 
 ### Testing
 
-You should use the app "postman" to test creating and deleting bookings.
+Use Postman to test creating and deleting bookings.
 
 You can also try with this ALPHA-version [hotel tester app: https://cyf-hotel-tester.netlify.com/](https://cyf-hotel-tester.netlify.com/).
 
-- Note that you'll have to click `set API` and enter your own base URL (e.g. https://alisina-hotel-server.glitch.me)
+- Note that you'll have to click `set API` and enter your own base URL
 - Do not rely on this app for your testing. Be sure to check the javascript console if it misbehaves.
 
 ## Data model
@@ -57,18 +57,6 @@ Each booking is an object with the following properties:
 
 - The `id` field must be assigned on the server, not by the client.
 
-## Want to run your code on the internet?
-
-If you want to share your server with other people the easiest way to do this is to use Glitch
-
-- [ ] Make sure you're logged in to https://glitch.com/
-- [ ] Remix this server on glitch - https://glitch.com/~cyf-hotel-start
-- [ ] Name your new server `yourname-hotel-server`
-- [ ] Make sure you're logged in so that it saves
-- [ ] Check that it is working by making a request to `/`
-- [ ] Take time to read the comments
-- [ ] Copy the code you've written to Glitch
-
 # Go ahead!
 
 If you think you know how to do that, go ahead!
@@ -79,13 +67,7 @@ You may find useful the [express cheatsheet](https://github.com/nbogie/express-n
 
 # End of Level 1 challenge!
 
-Well done!
-
-What to do now:
-
-Don't post on slack, unless there's a thread announced specifically for it.
-Instead, attach the URLs as links when you "mark done" your assignment in Google Classroom.
-You might want to download your project for safekeeping. (Tools: Git, Import, and Export: Download Project)
+Well done! Open your pullrequest and get it reviewed. You can update your pull request later if you complete the stretch challenges. Just push to the same branch.
 
 ## Level 2 - simple validation
 
@@ -97,9 +79,7 @@ In this case your server should return a status code of 400, and should NOT stor
 
 # 🏝️ Stretch challenges
 
-
 Below are some stretch challenges, have a go at these once you've completed the previous challenges.
-
 
 ## Level 3 (Optional, advanced) - search by date
 

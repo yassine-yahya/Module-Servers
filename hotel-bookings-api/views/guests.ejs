@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guests</title>
+  </head>
+  <body>
+    <h1>Hotel Guests</h1>
+    <% if (bookings && bookings.length > 0) { %>
+    <dl>
+      <% bookings.forEach(booking => { %>
+      <dt><%= booking.givenName %> <%= booking.familyName %></dt>
+      <dd><strong>Email:</strong> <%= booking.email %></dd>
+      <dd><strong>Check-in Date:</strong> <%= booking.checkInDate %></dd>
+      <dd><strong>Check-out Date:</strong> <%= booking.checkOutDate %></dd>
+      <% }); %>
+    </dl>
+    <% } else { %>
+    <h2>No guests at our hotel.</h2>
+    <% } %>
+  </body>
+</html>
