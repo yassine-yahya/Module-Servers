@@ -10,8 +10,6 @@ To complete this challenge you should be able to
 - Use `Express` to setup endpoints
 - Understand what a `GET` & `PUT` Request are and how to use them using `Fetch`
 
-This challenge is rated at **Easy to Medium**.
-
 # Mailing List REST API
 
 ## Tools
