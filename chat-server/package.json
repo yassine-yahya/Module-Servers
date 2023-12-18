@@ -5,6 +5,7 @@
   "name": "@module-node/chat-server",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

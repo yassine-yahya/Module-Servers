@@ -1,10 +1,15 @@
 process.env.PORT = process.env.PORT || 9090;
-const express = require("express");
-const cors = require("cors");
+import express from "express";
+import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 
 app.use(cors());
+
+// Get __dirname in ES module
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const welcomeMessage = {
   id: 0,
@@ -14,13 +19,12 @@ const welcomeMessage = {
 
 //This array is our "data store".
 //We will start with one message in the array.
-//Note: messages will be lost when Glitch restarts our server.
 const messages = [welcomeMessage];
 
-app.get("/", function (request, response) {
+app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
 });
 
-app.listen(process.env.PORT,() => {
+app.listen(process.env.PORT, () => {
   console.log(`listening on PORT ${process.env.PORT}...`);
 });

@@ -12,18 +12,6 @@ In the optional 'React' part of this challenge, you also make a React app which 
 
 - [ ] You should have completed at least Level 1 of the Quote Server challenge before attempting this challenge.
 
-## Want to run your code on the internet?
-
-If you want to share your server with other people the easiest way to do this is to use Glitch
-
-- [ ] Make sure you're logged in to https://glitch.com/
-- [ ] Remix https://glitch.com/~cyf-chat-start
-- [ ] Name your new server `yourname-chat-server`
-- [ ] Make sure you're logged in so that it saves
-- [ ] Check that it is working by making a request to `/`
-- [ ] Take time to read the comments
-- [ ] Copy the code you've written to Glitch
-
 ## Level 1 Challenge - make the chat server
 
 At this first level, your API must allow a client to:
@@ -59,18 +47,11 @@ You may find useful the [express cheatsheet](https://github.com/nbogie/express-n
 
 ## End of Level 1 challenge!
 
-Well done!
-
-What to do now:
-
-- [ ] _Don't_ post on slack, unless there's a thread announced specifically for it.
-- [ ] Instead, attach the URLs as links when you "mark done" your assignment in Google Classroom.
-- [ ] You might want to download your project for safekeeping. (Tools: Git, Import, and Export: Download Project)
+Well done! Open your pullrequest and get it reviewed.
 
 ## 🏝️ Stretch challenges
 
 The remaining challenges below are stretch challenges - you can have go at these once you've completed the Level 1 challenge.
-
 
 ## Level 2 - simple validation
 
@@ -115,9 +96,11 @@ Note: only do this if you have done all other Node homework this week - includin
 
 - [ ] Make a very simple React app called chat-react-app
 
-Note: Do not use `create-react-app` if you want your React code to be code-reviewed! Instead, you should:
+You can either use a CYF provided template or use Vite to create a new React app.
 
-- [ ] fork our starting repo. See "How should I start my React app", below.
+```shell
+npm create vite@latest chat-react-app --template react
+```
 
 #### Your UI should at least:
 
@@ -136,39 +119,16 @@ Note: Do not use `create-react-app` if you want your React code to be code-revie
 - [ ] You'll have to enable CORS on the express app (see note below)
   - For how to post JSON, Read ["Using Fetch", on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [ ] Host your react app on netlify
-- [ ] Attach the link in your google classroom submission (along with your glitch server url)
-
-#### How should I start my React app?
-
-To make code review easier for us, please:
-
-- [ ] fork our starting repo. (You can later create a PR when you want a code review.)
-
-The repo is here: https://github.com/CodeYourFuture/cyf-chat-react
-
-- [ ] Follow the "Making a Pull Request" guide on https://codeyourfuture.github.io/syllabus-master/others/making-a-pull-request.html
-
-- [ ] Then run `npm install` after opening a terminal in the new project directory.
-
-- Note that this repo was made by simply running `create-react-app` exactly as you have done in the past. There is nothing special about it!
-
-### Example screenshot of Simple React app
-
-Here's an example of how your react app might look.
-
-![Example Screenshot of React App](./screenshots/example_react_chat_app.png)
 
 #### Enabling CORS on the Express app
 
 You'll have to install and enable CORS on your server in order to allow your JSON to be loaded from a different server than your React app has been loaded from.
 
-(Your react app has probably been loaded from the `netlify.com` domain and your server is at `glitch.me`).
-
-On your express project on glitch, edit your `package.json` to add a dependency for the latest version of cors (e.g. `"cors": "^2.8.5"`)
+In your express project, edit your `package.json` to add a dependency for the latest version of cors (e.g. `"cors": "^2.8.5"`)
 
 Then in your `server.js` add...
 
-`const cors = require('cors')`
+`const cors = require('cors')` or `import cors from 'cors'`
 
 and
 
@@ -186,8 +146,6 @@ and in CORS in Express [here](https://expressjs.com/en/resources/middleware/cors
 | POST   | `/messages`    | create a new message   |
 | DELETE | `/messages/17` | delete a message by id |
 
-
 ## Solution
 
-You can find the solution to this challenge on the `solutions` branch of this repo.
-
+You can hopefully find solutions to this challenge on the `solutions` branch of this repo. If not, ask your mentors to update it!
