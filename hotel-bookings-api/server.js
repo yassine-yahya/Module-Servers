@@ -19,6 +19,38 @@ app.get("/bookings", (req, res) => {
   res.json(bookings);
 });
 
+// POST new booking
+
+
+app.post("/newdata", async (req, res) => {
+  try {
+    const data = await fs.readFile('bookings.json', 'utf8');
+    const existingData = JSON.parse(data);
+
+    const newData = req.body;
+
+    existingData.push(newData);
+
+    await fs.writeFile('bookings.json', JSON.stringify(existingData, null, 2), 'utf8');
+
+    res.status(201).send('New booking has been added successfully.');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Error while adding new booking.');
+  }
+});
+
+//Read one booking, specified by an ID
+
+app.get("/:id", (req, res) => {
+  const reqId = req.params.id;
+  
+  fs.readFile('bookings.json', 'utf8') => {
+   res.status(200).send('successful')
+  }
+  })
+
+
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
